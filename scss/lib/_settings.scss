@@ -1,0 +1,164 @@
+/*------------------------------------*\
+$BREAKPOINTS
+\*------------------------------------*/
+
+/*.div {
+color: pink;
+@include respond-to(medium) {
+color: maroon;
+}
+}
+*/
+
+
+
+/*------------------------------------*\
+$LAYOUT
+\*------------------------------------*/
+/**
+* Constant layout values, apart from these we can also declare values
+* for different blocks sizes and more.
+*/
+$baselineheight:     1.5;
+$gutterwidth:        24px;
+$padding:            $gutterwidth;
+$minigutter:         $gutterwidth / 2;
+$pagemaxwidth:       1024px;
+
+$btnprimary-radius:  4px;
+$btnprimary-borderwith: 2px;
+$btnprimary-borderstyle: solid;
+
+
+
+/*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+/**
+* Fonts definitions
+*/
+$basefont : "Spartan", Helvetica, Arial, sans-serif;
+$secondfont : "EB Garamond", Helvetica, Arial, sans-serif;
+
+$baseheadingfontweight : normal;
+$baseheadingfontcolor : inherit;
+
+$basefontsize   :   16px;
+
+
+
+
+/*------------------------------------*\
+$COLORS
+\*------------------------------------*/
+
+
+$c-white:                #ffffff;
+$c-black:                #000000;
+
+//Monocromo
+$c-monocromo-900:        #26201B;
+$c-monocromo-800:        #383126;
+$c-monocromo-700:        #52483B;
+$c-monocromo-600:        #756A5B;
+$c-monocromo-500:        #B9AC99;
+$c-monocromo-400:        #CBBDAA;
+$c-monocromo-300:        #D5CCC1;
+$c-monocromo-200:        #DFDAD3;
+$c-monocromo-100:        #F4F3EF;
+
+//Primario
+$c-primario-dark:        #83390B;
+$c-primario-default:     #B36206;
+$c-primario-darkmode:    #D5903C;
+$c-primario-light:       #EAB05A;
+$c-primario-bg:          #FFE5B4;
+
+//Azul
+$c-azul-dark:            #0B2173;
+$c-azul-default:         #1E60BF;
+$c-azul-darkmode:        #3C6EC8;
+$c-azul-light:           #CADFFF;
+$c-azul-bg:              #88ABED;
+
+//Suceso
+$c-suceso-dark:          #067306;
+$c-suceso-default:       #008A00;
+$c-suceso-darkmode:      #A6F787;
+$c-suceso-light:         #EAF9DE;
+$c-suceso-bg:            #CBFFAE;
+
+//Advertencia
+$c-advertencia-dark:     #946300;
+$c-advertencia-default:  #EAAC30;
+$c-advertencia-darkmode: #FFDF9A;
+$c-advertencia-light:    #FFF8E9;
+$c-advertencia-bg:       #FFE6B0;
+
+//Error
+$c-error-dark:           #710022;
+$c-error-default:        #9E0038;
+$c-error-darkmode:       #C84661;
+$c-error-light:          #FEE7EB;
+$c-error-bg:             #FF879D;
+
+//Tranparent light
+$c-transparent-light-95: rgba(239, 240, 246, 0.95);
+$c-transparent-light-75: rgba(239, 240, 246, 0.75);
+$c-transparent-light-65: rgba(239, 240, 246, 0.65);
+$c-transparent-light-40: rgba(239, 240, 246, 0.45);
+$c-transparent-light-25: rgba(239, 240, 246, 0.25);
+$c-transparent-light-10: rgba(239, 240, 246, 0.10);
+
+//Tranparent dark
+$c-transparent-dark-95: rgba(20, 20, 43, 0.95);
+$c-transparent-dark-75: rgba(20, 20, 43, 0.75);
+$c-transparent-dark-65: rgba(20, 20, 43, 0.65);
+$c-transparent-dark-40: rgba(20, 20, 43, 0.40);
+$c-transparent-dark-25: rgba(20, 20, 43, 0.25);
+$c-transparent-dark-10: rgba(20, 20, 43, 0.10);
+
+//Colores específicos
+$c-formacion-grado:        #5D4976;
+$c-formacion-master:       #A7706C;
+$c-formacion-doctorado:    #E19F40;
+$c-formacion-profesionales:#1E60BF;
+$c-formacion-entusiastas:  #989A2B;
+
+//Links
+$c-link-normal: $c-monocromo-900;
+$c-link-hover: $c-primario-default;
+$c-link-focus: $c-primario-dark;
+$c-link-activ: $c-monocromo-900;
+
+//Buttons
+$c-button-normal: $c-primario-default;
+$c-button-hover: $c-primario-dark;
+$c-button-active: $c-monocromo-900;
+$c-button-inactive: $c-monocromo-100;
+
+//Placeholder
+$c-placeholder: $c-monocromo-200;
+$c-placeholder-active: $c-monocromo-100;
+$c-placeholder-complete: $c-monocromo-300;
+// $c-placeholder-inactive: $c-monocromo-400 - 0.5;
+
+$c-placeholder-exito: $c-suceso-light;
+$c-placeholder-error: $c-error-light;
+
+//Checkbox
+$c-checkboxactive-normal: $c-primario-default;
+$c-checkboxactive-hover: $c-primario-dark;
+$c-checkboxactive-desability: $c-primario-light;
+
+$c-checkboxinactive-normal: $c-monocromo-400;
+$c-checkboxinactive-hover: $c-monocromo-500;
+// $c-checkboxinactive-desability: $c-monocromo-400 - 0.5;
+
+$c-check: $c-monocromo-100;
+$c-check-hover: $c-monocromo-200;
+
+//Tabla
+$c-tabla-bg: $c-monocromo-200;
+$c-tabla-border: $c-monocromo-400;
+$c-tabla-text: $c-monocromo-900;

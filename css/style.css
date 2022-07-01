@@ -1,0 +1,36 @@
+/*------------------------------------*\
+$BREAKPOINTS
+\*------------------------------------*/
+/*.div {
+color: pink;
+@include respond-to(medium) {
+color: maroon;
+}
+}
+*/
+/*------------------------------------*\
+$LAYOUT
+\*------------------------------------*/
+/**
+* Constant layout values, apart from these we can also declare values
+* for different blocks sizes and more.
+*/
+/*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+/**
+* Fonts definitions
+*/
+/*------------------------------------*\
+$COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+    BOTONES
+\*------------------------------------*/
+.btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  padding: 40px;
+}
