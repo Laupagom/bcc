@@ -4,7 +4,41 @@
 
 .btn {
     align-items: center;
-    border-radius: 40px;
+    border-radius: $btnprimary-radius;
     padding: 40px;
+    &__primary {
+        @extend .btn;
+        font-size: 1rem;
+            &--b {
+                @extend .btn__primary;
+                padding: 20px 32px;
 
+                &--default-b {
+                    @extend .btn__primary--b;
+                    color: $c-white;
+                    background-color: $c-primario-default;
+                    &:hover {
+                        background-color: $c-button-hover;
+                    }
+                    &:active,
+                    &:focus,
+                    &:visited {
+                        background-color: $c-button-active;
+                    }
+                    &:disabled {
+                        cursor: not-allowed;
+                        pointer-events:none;
+                        background-color: $c-monocromo-100;
+                    }
+                }
+            }
+        }
+        &--m {
+            @extend .btn__primary;
+            padding: 16px 24px;
+        }
+        &--s {
+            font-size: 13px;
+            padding: 8px 16px;
+        }
     }
