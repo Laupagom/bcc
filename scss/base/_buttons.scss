@@ -5,6 +5,7 @@
 .btn {
     align-items: center;
     text-transform: uppercase;
+    cursor: pointer;
     &__primary {
         @extend .btn;
         font-size: 1rem;

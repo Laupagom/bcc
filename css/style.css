@@ -39,6 +39,7 @@ $COLORS
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color {
   font-size: 1rem;
@@ -280,6 +281,17 @@ $COLORS
 }
 .etiqueta__entusiastas {
   background-color: #989A2B;
+}
+
+svg.svg__icon {
+  position: relative;
+  top: 0.125rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  fill: currentColor;
+  margin-left: 20px;
 }
 
 .switch {
