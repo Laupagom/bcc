@@ -204,6 +204,8 @@ $COLORS
 .round {
   padding: 30px;
   position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .round label {
@@ -243,6 +245,8 @@ $COLORS
 .round input[type=checkbox]:checked + label:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .round input[type=checkbox]:checked + label:disabled {
   cursor: not-allowed;
@@ -253,4 +257,56 @@ $COLORS
 
 .round input[type=checkbox]:checked + label:after {
   opacity: 1;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #DFDAD3;
+  cursor: pointer;
+  border-radius: 34px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  height: 26px;
+  width: 26px;
+  background-color: #FCFCFC;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #B36206;
+}
+input:checked + .slider:hover {
+  background-color: #83390B;
+}
+input:checked + .slider:disabled {
+  background-color: rgba(179, 98, 6, 0.5);
+}
+input:checked + .slider::before {
+  -webkit-transform: translatex(30px);
+          transform: translatex(30px);
+  background-color: #FCFCFC;
 }

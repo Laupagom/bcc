@@ -1,6 +1,7 @@
 .round {
     padding: 30px;
     position: relative;
+    transition: 0.4s;
 }
 .round label {
     background-color: #fff;
@@ -37,6 +38,8 @@ border-color: $c-button-primary;
 &:hover {
     background-color: $c-button-hover;
     border: 2px solid $c-button-hover;
+    transition: 0.4s;
+
 }
 &:disabled {
     cursor: not-allowed;
