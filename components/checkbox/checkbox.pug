@@ -1,0 +1,9 @@
+include ../head/head.pug
+body
+    div.round
+        input(type='checkbox' checked id='myCheck')
+        label(for='chekbox')
+        p Click the "Try it" button to disable the checkbox
+        button(type='button', onclick='disabledCheck()' ) PressMe
+
+    script(src='checkbox.js')
