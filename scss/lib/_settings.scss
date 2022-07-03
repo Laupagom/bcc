@@ -25,11 +25,16 @@ $padding:            $gutterwidth;
 $minigutter:         $gutterwidth / 2;
 $pagemaxwidth:       1024px;
 
+//ButtonLayout
 $btnprimary-radius:  4px;
+$btnmodal-radius: 48px;
 $btnprimary-borderwith: 2px;
 $btnprimary-borderstyle: solid;
 
-
+//Button size
+$btnprimary-paddinglarge: 20px 32px;
+$btnprimary-paddingmedium: 16px 24px;
+$btnprimary-paddingsmall: 9px 22px;
 
 /*------------------------------------*\
     $FONT-FACE
@@ -67,12 +72,12 @@ $c-monocromo-300:        #D5CCC1;
 $c-monocromo-200:        #DFDAD3;
 $c-monocromo-100:        #F4F3EF;
 
-//Primario
-$c-primario-dark:        #83390B;
-$c-primario-default:     #B36206;
-$c-primario-darkmode:    #D5903C;
-$c-primario-light:       #EAB05A;
-$c-primario-bg:          #FFE5B4;
+//Primary
+$c-primary-dark:        #83390B;
+$c-primary-default:     #B36206;
+$c-primary-darkmode:    #D5903C;
+$c-primary-light:       #EAB05A;
+$c-primary-bg:          #FFE5B4;
 
 //Azul
 $c-azul-dark:            #0B2173;
@@ -127,33 +132,33 @@ $c-formacion-entusiastas:  #989A2B;
 
 //Links
 $c-link-normal: $c-monocromo-900;
-$c-link-hover: $c-primario-default;
-$c-link-focus: $c-primario-dark;
+$c-link-hover: $c-primary-default;
+$c-link-focus: $c-primary-dark;
 $c-link-activ: $c-monocromo-900;
 
 //Buttons
-$c-button-normal: $c-primario-default;
-$c-button-hover: $c-primario-dark;
+$c-button-primary: $c-primary-default;
+$c-button-hover: $c-primary-dark;
 $c-button-active: $c-monocromo-900;
-$c-button-inactive: $c-monocromo-100;
+$c-button-disabled: rgba($c-primary-default, .5);
 
 //Placeholder
 $c-placeholder: $c-monocromo-200;
 $c-placeholder-active: $c-monocromo-100;
 $c-placeholder-complete: $c-monocromo-300;
-// $c-placeholder-inactive: $c-monocromo-400 - 0.5;
+$c-placeholder-disabled:rgba($c-monocromo-400, .5);
 
 $c-placeholder-exito: $c-suceso-light;
 $c-placeholder-error: $c-error-light;
 
 //Checkbox
-$c-checkboxactive-normal: $c-primario-default;
-$c-checkboxactive-hover: $c-primario-dark;
-$c-checkboxactive-desability: $c-primario-light;
+$c-checkboxactive-normal: $c-primary-default;
+$c-checkboxactive-hover: $c-primary-dark;
+$c-checkboxactive-disabled: $c-primary-light;
 
 $c-checkboxinactive-normal: $c-monocromo-400;
 $c-checkboxinactive-hover: $c-monocromo-500;
-// $c-checkboxinactive-desability: $c-monocromo-400 - 0.5;
+$c-checkboxinactive-disabled: rgba($c-monocromo-400, .5);
 
 $c-check: $c-monocromo-100;
 $c-check-hover: $c-monocromo-200;

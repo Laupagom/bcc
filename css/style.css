@@ -1,4 +1,11 @@
 /*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
+/*Btn primary
+*/
+/*Btn modal
+*/
+/*------------------------------------*\
 $BREAKPOINTS
 \*------------------------------------*/
 /*.div {
@@ -27,38 +34,169 @@ $COLORS
 /*------------------------------------*\
     BOTONES
 \*------------------------------------*/
-.btn, .btn__primary, .btn--m, .btn__primary--b, .btn__primary--b--default-b {
+.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 4px;
-  padding: 40px;
+  text-transform: uppercase;
 }
-.btn__primary, .btn--m, .btn__primary--b, .btn__primary--b--default-b {
+.btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color {
   font-size: 1rem;
+  border-radius: 4px;
 }
-.btn__primary--b, .btn__primary--b--default-b {
-  padding: 20px 32px;
-}
-.btn__primary--b--default-b {
+.btn__primary--large-color {
   color: #ffffff;
   background-color: #B36206;
+  border: 2px solid #B36206;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  padding: 20px 32px;
 }
-.btn__primary--b--default-b:hover {
+.btn__primary--large-color:hover {
   background-color: #83390B;
+  border: 2px solid #83390B;
 }
-.btn__primary--b--default-b:active, .btn__primary--b--default-b:focus, .btn__primary--b--default-b:visited {
+.btn__primary--large-color:active, .btn__primary--large-color:focus, .btn__primary--large-color:visited {
   background-color: #26201B;
+  border: 2px solid #26201B;
 }
-.btn__primary--b--default-b:disabled {
+.btn__primary--large-color:disabled {
   cursor: not-allowed;
   pointer-events: none;
-  background-color: #F4F3EF;
+  background-color: rgba(179, 98, 6, 0.5);
+  border: 2px solid rgba 179, 98, 6, 0.5;
 }
-.btn--m {
+.btn__primary--large-nocolor {
+  color: #B36206;
+  background-color: #ffffff;
+  border: 2px solid #B36206;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  padding: 20px 32px;
+}
+.btn__primary--large-nocolor:hover {
+  color: #83390B;
+  border: 2px solid #83390B;
+}
+.btn__primary--large-nocolor:active, .btn__primary--large-nocolor:focus, .btn__primary--large-nocolor:visited {
+  color: #26201B;
+  border: 2px solid #26201B;
+}
+.btn__primary--large-nocolor:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: rgba(179, 98, 6, 0.5);
+  border: 2px solid rgba(179, 98, 6, 0.5);
+}
+.btn__primary--medium-color {
+  color: #ffffff;
+  background-color: #B36206;
+  border: 2px solid #B36206;
+  font-size: 15px;
+  letter-spacing: -0.3px;
   padding: 16px 24px;
 }
-.btn--s {
+.btn__primary--medium-color:hover {
+  background-color: #83390B;
+  border: 2px solid #83390B;
+}
+.btn__primary--medium-color:active, .btn__primary--medium-color:focus, .btn__primary--medium-color:visited {
+  background-color: #26201B;
+  border: 2px solid #26201B;
+}
+.btn__primary--medium-color:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: rgba(179, 98, 6, 0.5);
+  border: 2px solid rgba 179, 98, 6, 0.5;
+}
+.btn__primary--medium-nocolor {
+  color: #B36206;
+  background-color: #ffffff;
+  border: 2px solid #B36206;
+  font-size: 15px;
+  letter-spacing: -0.3px;
+  padding: 16px 24px;
+}
+.btn__primary--medium-nocolor:hover {
+  color: #83390B;
+  border: 2px solid #83390B;
+}
+.btn__primary--medium-nocolor:active, .btn__primary--medium-nocolor:focus, .btn__primary--medium-nocolor:visited {
+  color: #26201B;
+  border: 2px solid #26201B;
+}
+.btn__primary--medium-nocolor:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: rgba(179, 98, 6, 0.5);
+  border: 2px solid rgba(179, 98, 6, 0.5);
+}
+.btn__primary--small-color {
+  color: #ffffff;
+  background-color: #B36206;
+  border: 2px solid #B36206;
   font-size: 13px;
-  padding: 8px 16px;
+  letter-spacing: -0.2px;
+  padding: 9px 22px;
+}
+.btn__primary--small-color:hover {
+  background-color: #83390B;
+  border: 2px solid #83390B;
+}
+.btn__primary--small-color:active, .btn__primary--small-color:focus, .btn__primary--small-color:visited {
+  background-color: #26201B;
+  border: 2px solid #26201B;
+}
+.btn__primary--small-color:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: rgba(179, 98, 6, 0.5);
+  border: 2px solid rgba 179, 98, 6, 0.5;
+}
+.btn__primary--small-nocolor {
+  color: #B36206;
+  background-color: #ffffff;
+  border: 2px solid #B36206;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  padding: 9px 22px;
+}
+.btn__primary--small-nocolor:hover {
+  color: #83390B;
+  border: 2px solid #83390B;
+}
+.btn__primary--small-nocolor:active, .btn__primary--small-nocolor:focus, .btn__primary--small-nocolor:visited {
+  color: #26201B;
+  border: 2px solid #26201B;
+}
+.btn__primary--small-nocolor:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: rgba(179, 98, 6, 0.5);
+  border: 2px solid rgba(179, 98, 6, 0.5);
+}
+.btn__modal {
+  font-size: 1rem;
+  border-radius: 48px;
+  color: #ffffff;
+  background-color: #B36206;
+  border: 2px solid #B36206;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  padding: 20px 32px;
+}
+.btn__modal:hover {
+  background-color: #83390B;
+  border: 2px solid #83390B;
+}
+.btn__modal:active, .btn__modal:focus, .btn__modal:visited {
+  background-color: #26201B;
+  border: 2px solid #26201B;
+}
+.btn__modal:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: rgba(179, 98, 6, 0.5);
+  border: 2px solid rgba 179, 98, 6, 0.5;
 }
