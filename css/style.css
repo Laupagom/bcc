@@ -32,13 +32,20 @@ $LAYOUT
 $COLORS
 \*------------------------------------*/
 /*------------------------------------*\
+$SHADOWS
+\*------------------------------------*/
+/*------------------------------------*\
     BOTONES
 \*------------------------------------*/
 .btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   cursor: pointer;
 }
 .btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color {
@@ -47,25 +54,35 @@ $COLORS
 }
 .btn__primary--large-color {
   color: #ffffff;
-  background-color: #B36206;
-  border: 2px solid #B36206;
   font-size: 18px;
   letter-spacing: -0.3px;
   padding: 20px 32px;
 }
+.btn__primary--large-color:link {
+  background-color: #B36206;
+  border: 2px solid #B36206;
+}
+.btn__primary--large-color:visited {
+  background-color: #26201B;
+  border: 2px solid #26201B;
+}
 .btn__primary--large-color:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
-}
-.btn__primary--large-color:active, .btn__primary--large-color:focus, .btn__primary--large-color:visited {
-  background-color: #26201B;
-  border: 2px solid #26201B;
 }
 .btn__primary--large-color:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba 179, 98, 6, 0.5;
+}
+.btn__primary--large-color h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Helvetica";
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 .btn__primary--large-nocolor {
   color: #B36206;
@@ -75,13 +92,17 @@ $COLORS
   letter-spacing: -0.3px;
   padding: 20px 32px;
 }
+.btn__primary--large-nocolor:link {
+  color: #B36206;
+  border: 2px solid #B36206;
+}
+.btn__primary--large-nocolor:visited {
+  color: #26201B;
+  border: 2px solid #26201B;
+}
 .btn__primary--large-nocolor:hover {
   color: #83390B;
   border: 2px solid #83390B;
-}
-.btn__primary--large-nocolor:active, .btn__primary--large-nocolor:focus, .btn__primary--large-nocolor:visited {
-  color: #26201B;
-  border: 2px solid #26201B;
 }
 .btn__primary--large-nocolor:disabled {
   cursor: not-allowed;
@@ -89,27 +110,45 @@ $COLORS
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
+.btn__primary--large-nocolor h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Helvetica";
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
 .btn__primary--medium-color {
   color: #ffffff;
-  background-color: #B36206;
-  border: 2px solid #B36206;
   font-size: 15px;
   letter-spacing: -0.3px;
   padding: 16px 24px;
 }
+.btn__primary--medium-color:link {
+  background-color: #B36206;
+  border: 2px solid #B36206;
+}
+.btn__primary--medium-color:visited {
+  background-color: #26201B;
+  border: 2px solid #26201B;
+}
 .btn__primary--medium-color:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
-}
-.btn__primary--medium-color:active, .btn__primary--medium-color:focus, .btn__primary--medium-color:visited {
-  background-color: #26201B;
-  border: 2px solid #26201B;
 }
 .btn__primary--medium-color:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba 179, 98, 6, 0.5;
+}
+.btn__primary--medium-color h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Helvetica";
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 .btn__primary--medium-nocolor {
   color: #B36206;
@@ -119,13 +158,17 @@ $COLORS
   letter-spacing: -0.3px;
   padding: 16px 24px;
 }
+.btn__primary--medium-nocolor:link {
+  color: #B36206;
+  border: 2px solid #B36206;
+}
+.btn__primary--medium-nocolor:visited {
+  color: #26201B;
+  border: 2px solid #26201B;
+}
 .btn__primary--medium-nocolor:hover {
   color: #83390B;
   border: 2px solid #83390B;
-}
-.btn__primary--medium-nocolor:active, .btn__primary--medium-nocolor:focus, .btn__primary--medium-nocolor:visited {
-  color: #26201B;
-  border: 2px solid #26201B;
 }
 .btn__primary--medium-nocolor:disabled {
   cursor: not-allowed;
@@ -133,27 +176,45 @@ $COLORS
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
+.btn__primary--medium-nocolor h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Helvetica";
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
 .btn__primary--small-color {
   color: #ffffff;
-  background-color: #B36206;
-  border: 2px solid #B36206;
   font-size: 13px;
   letter-spacing: -0.2px;
   padding: 9px 22px;
 }
+.btn__primary--small-color:link {
+  background-color: #B36206;
+  border: 2px solid #B36206;
+}
+.btn__primary--small-color:visited {
+  background-color: #26201B;
+  border: 2px solid #26201B;
+}
 .btn__primary--small-color:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
-}
-.btn__primary--small-color:active, .btn__primary--small-color:focus, .btn__primary--small-color:visited {
-  background-color: #26201B;
-  border: 2px solid #26201B;
 }
 .btn__primary--small-color:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba 179, 98, 6, 0.5;
+}
+.btn__primary--small-color h5 {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Helvetica";
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 .btn__primary--small-nocolor {
   color: #B36206;
@@ -163,13 +224,17 @@ $COLORS
   letter-spacing: -0.2px;
   padding: 9px 22px;
 }
+.btn__primary--small-nocolor:link {
+  color: #B36206;
+  border: 2px solid #B36206;
+}
+.btn__primary--small-nocolor:visited {
+  color: #26201B;
+  border: 2px solid #26201B;
+}
 .btn__primary--small-nocolor:hover {
   color: #83390B;
   border: 2px solid #83390B;
-}
-.btn__primary--small-nocolor:active, .btn__primary--small-nocolor:focus, .btn__primary--small-nocolor:visited {
-  color: #26201B;
-  border: 2px solid #26201B;
 }
 .btn__primary--small-nocolor:disabled {
   cursor: not-allowed;
@@ -177,9 +242,23 @@ $COLORS
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
+.btn__primary--small-nocolor h5 {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Helvetica";
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
 .btn__modal {
   font-size: 1rem;
   border-radius: 48px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   color: #ffffff;
   background-color: #B36206;
   border: 2px solid #B36206;
@@ -187,13 +266,17 @@ $COLORS
   letter-spacing: -0.3px;
   padding: 20px 32px;
 }
+.btn__modal:link {
+  background-color: #B36206;
+  border: 2px solid #B36206;
+}
+.btn__modal:visited {
+  background-color: #26201B;
+  border: 2px solid #26201B;
+}
 .btn__modal:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
-}
-.btn__modal:active, .btn__modal:focus, .btn__modal:visited {
-  background-color: #26201B;
-  border: 2px solid #26201B;
 }
 .btn__modal:disabled {
   cursor: not-allowed;
@@ -201,63 +284,88 @@ $COLORS
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba 179, 98, 6, 0.5;
 }
-
-.round {
-  padding: 30px;
-  position: relative;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.btn__modal h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Helvetica";
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
-.round label {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
   cursor: pointer;
-  height: 28px;
-  left: 0;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* EScondemos el checkbox del navegador */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox */
+.checkmark, .checkmark__radio {
   position: absolute;
   top: 0;
-  width: 28px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #CBBDAA;
 }
-.round label:after {
-  border: 2px solid #fff;
-  border-top: none;
-  border-right: none;
-  content: "";
-  height: 6px;
-  left: 7px;
-  opacity: 0;
-  position: absolute;
-  top: 8px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 12px;
+.checkmark__radio {
+  border-radius: 200px;
 }
 
-.round input[type=checkbox] {
-  visibility: hidden;
-}
-
-.round input[type=checkbox]:checked + label {
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark, .container:hover input ~ .checkmark__radio {
   background-color: #B36206;
-  border-color: #B36206;
 }
-.round input[type=checkbox]:checked + label:hover {
-  background-color: #83390B;
-  border: 2px solid #83390B;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.round input[type=checkbox]:checked + label:disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-  background-color: rgba(179, 98, 6, 0.5);
-  border: 2px solid rgba 179, 98, 6, 0.5;
+.container:hover input ~ .checkmark:hover, .container:hover input ~ .checkmark__radio:hover {
+  background-color: #B36206;
 }
 
-.round input[type=checkbox]:checked + label:after {
-  opacity: 1;
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark, .container input:checked ~ .checkmark__radio {
+  background-color: #B36206;
+}
+.container input:checked ~ .checkmark:hover, .container input:checked ~ .checkmark__radio:hover {
+  background-color: #B36206;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after, .checkmark__radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after, .container input:checked ~ .checkmark__radio:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after, .container .checkmark__radio:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #F4F3EF;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .etiqueta, .etiqueta__entusiastas, .etiqueta__profesionales, .etiqueta__doctorado, .etiqueta__master, .etiqueta__grado {
@@ -283,15 +391,20 @@ $COLORS
   background-color: #989A2B;
 }
 
-svg.svg__icon {
+.svg__icon, .svg__icon--left, .svg__icon--right {
   position: relative;
-  top: 0.125rem;
+  top: 0.1rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 1rem;
   width: 1rem;
   fill: currentColor;
+}
+.svg__icon--right {
   margin-left: 20px;
+}
+.svg__icon--left {
+  margin-right: 20px;
 }
 
 .switch {

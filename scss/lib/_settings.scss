@@ -61,7 +61,15 @@ $COLORS
 $c-white:                #ffffff;
 $c-black:                #000000;
 
+//Marcas
+$c-marcas-bcc-corporate:  #b9ac99;
+$c-marcas-bcc-innovation: #59718c;
+$c-marcas-culinary-action:#a1232f;
+$c-marcas-culinary-club:  #989a2b;
+$c-marcas-labe:           #2ed9c3;
+
 //Monocromo
+$c-monocromo-full-white: #ffffff;
 $c-monocromo-900:        #26201B;
 $c-monocromo-800:        #383126;
 $c-monocromo-700:        #52483B;
@@ -107,13 +115,59 @@ $c-error-darkmode:       #C84661;
 $c-error-light:          #FEE7EB;
 $c-error-bg:             #FF879D;
 
+//Rojo
+$c-rojo-100:    #fff2f1;
+$c-rojo-200:    #ffc3c0;
+$c-rojo-300:    #ff968f;
+$c-rojo-400:    #fd6150;
+$c-rojo-500:    #e61b00;
+$c-rojo-600:    #ab1400;
+$c-rojo-700:    #8b1200;
+$c-rojo-800:    #5e0c00;
+
+//Naranja
+$c-naranja-100: #fff4eb;
+$c-naranja-200: #ffdbbd;
+$c-naranja-300: #ffa65a;
+$c-naranja-400: #ff9943;
+$c-naranja-500: #ee6d00;
+$c-naranja-600: #c25700;
+$c-naranja-700: #994600;
+$c-naranja-800: #662f00;
+
+//Amarillo
+$c-amarillo-100: #fff8e9;
+$c-amarillo-200: #ffe6b0;
+$c-amarillo-300: #ffdf9a;
+$c-amarillo-400: #fdcc62;
+$c-amarillo-500: #eaac30;
+$c-amarillo-600: #946300;
+$c-amarillo-700: #6e5523;
+$c-amarillo-800: #534019;
+
+//Verde
+$c-verde-100: #eaf9de;
+$c-verde-200: #cbffae;
+$c-verde-300: #a6f787;
+$c-verde-400: #7df75a;
+$c-verde-500: #18bb0c;
+$c-verde-600: #008a00;
+$c-verde-700: #067306;
+$c-verde-800: #07540a;
+
 //Tranparent light
-$c-transparent-light-95: rgba(239, 240, 246, 0.95);
-$c-transparent-light-75: rgba(239, 240, 246, 0.75);
-$c-transparent-light-65: rgba(239, 240, 246, 0.65);
-$c-transparent-light-40: rgba(239, 240, 246, 0.45);
-$c-transparent-light-25: rgba(239, 240, 246, 0.25);
-$c-transparent-light-10: rgba(239, 240, 246, 0.10);
+$c-transparencia-dark-overlay-95:  #14142bf2;
+$c-transparencia-dark-overlay-75:  #14142bbf;
+$c-transparencia-dark-overlay-65:  #14142ba6;
+$c-transparencia-dark-overlay-40:  #14142b66;
+$c-transparencia-dark-overlay-25:  #14142b40;
+$c-transparencia-dark-overlay-10:  #14142b1a;
+$c-transparencia-light-overlay-95: #eff0f6f2;
+$c-transparencia-light-overlay-75: #eff0f6bf;
+$c-transparencia-light-overlay-65: #eff0f6a6;
+$c-transparencia-light-overlay-40: #eff0f666;
+$c-transparencia-light-overlay-25: #eff0f640;
+$c-transparencia-light-overlay-10: #eff0f61a;
 
 //Tranparent dark
 $c-transparent-dark-95: rgba(20, 20, 43, 0.95);
@@ -123,7 +177,7 @@ $c-transparent-dark-40: rgba(20, 20, 43, 0.40);
 $c-transparent-dark-25: rgba(20, 20, 43, 0.25);
 $c-transparent-dark-10: rgba(20, 20, 43, 0.10);
 
-//Colores específicos
+//Formación
 $c-formacion-grado:        #5D4976;
 $c-formacion-master:       #A7706C;
 $c-formacion-doctorado:    #E19F40;
@@ -167,3 +221,13 @@ $c-check-hover: $c-monocromo-200;
 $c-tabla-bg: $c-monocromo-200;
 $c-tabla-border: $c-monocromo-400;
 $c-tabla-text: $c-monocromo-900;
+
+
+
+/*------------------------------------*\
+$SHADOWS
+\*------------------------------------*/
+
+$drop-shadow-large: 0px 0px 72px 0px #0000000a;
+$drop-shadow-medium: 0px 0px 32px 0px #0000000a;
+$drop-shadow-small: 0px 0px 16px 0px #0000000a;

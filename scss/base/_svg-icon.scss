@@ -1,9 +1,16 @@
-svg.svg__icon {
+.svg__icon {
     position: relative;
-    top: .125rem;
+    top: .100rem;
     flex-shrink: 0;
     height: 1rem;
     width: 1rem;
     fill: currentColor;
-    margin-left: 20px;
+    &--right {
+        @extend .svg__icon;
+        margin-left: 20px;
+    }
+    &--left {
+        @extend .svg__icon;
+        margin-right: 20px;
+    }
 }
