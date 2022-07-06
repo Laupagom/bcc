@@ -14,6 +14,12 @@ include ../head/head.pug
     //- no icon
     a.btn__primary--large-color(href="#")
         h5 Press
+        svg( 
+        class="svg__icon--left", 
+        aria-labelledby="btn__primary--large-color",
+        )
+            use(xlink:href="../../src/iconos/calendario.svg#calendar")
+
     
     //- disabled 
     button(class='btn__primary--large-color' disabled) Presss

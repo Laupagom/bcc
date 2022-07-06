@@ -12,5 +12,6 @@
     &--left {
         @extend .svg__icon;
         margin-right: 20px;
+        float: left;
     }
 }
