@@ -2,7 +2,7 @@
 @import "lib/functions";
 @import "lib/settings";
 @import "lib/mixins";
-@import "lib/display";
+@import "lib/utilities";
 
 
 //base
@@ -28,5 +28,4 @@
 //site
 @import "site/site";
 
-//utilities
-@import "utilities/utilities";
+
