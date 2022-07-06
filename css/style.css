@@ -1,15 +1,5 @@
 @charset "UTF-8";
 /*------------------------------------*\
-    BUTTONS
-\*------------------------------------*/
-/*Btn primary
-*/
-/*Btn modal
-*/
-/*------------------------------------*\
-    BREAKPOINT
-\*------------------------------------*/
-/*------------------------------------*\
 $BREAKPOINTS
 \*------------------------------------*/
 /*.div {
@@ -38,6 +28,52 @@ $COLORS
 /*------------------------------------*\
 $SHADOWS
 \*------------------------------------*/
+/*------------------------------------*\
+$BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
+/*Btn primary
+*/
+/*Btn modal
+*/
+/*------------------------------------*\
+    BREAKPOINT
+\*------------------------------------*/
+/*------------------------------------*\
+    LINKS
+\*------------------------------------*/
+.link {
+  text-transform: uppercase;
+}
+.link:link, .link:active {
+  color: #26201B;
+}
+.link:hover {
+  color: #B36206;
+}
+.link:focus {
+  color: #83390B;
+}
+
+.display__mobile {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .display__mobile {
+    display: none;
+  }
+}
+.display__desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .display__desktop {
+    display: block;
+  }
+}
+
 /*------------------------------------*\
     BOTONES
 \*------------------------------------*/
@@ -297,6 +333,90 @@ $SHADOWS
   margin-bottom: 1rem;
 }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 550px;
+  height: auto;
+}
+.card__img {
+  min-width: 120px;
+  max-width: 140px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.card__border {
+  border: 1px solid #756A5B;
+  max-width: 468px;
+  background-color: #DFDAD3;
+}
+.card__details, .card__details-investigacion, .card__details-producto, .card__details-formacion {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card__details-formacion {
+  font-size: 15px;
+  color: #F4F3EF;
+}
+.card__details-investigacion, .card__details-producto {
+  color: #383126;
+  background-color: #DFDAD3;
+}
+.card__details-investigacion p, .card__details-producto p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+.card__details-investigacion h3, .card__details-producto h3 {
+  -webkit-margin-after: 0.09rem;
+          margin-block-end: 0.09rem;
+  font-size: 15px;
+}
+.card__details-producto {
+  -webkit-margin-before: 0.9rem;
+          margin-block-start: 0.9rem;
+  display: inline-block;
+  padding-top: 0.7rem;
+}
+.card__details-producto h3 {
+  padding: 0;
+}
+.card__color-grado {
+  background-color: #5D4976;
+}
+.card__color-master {
+  background-color: #A7706C;
+}
+.card__color-doctorado {
+  background-color: #E19F40;
+}
+.card__color-cursos {
+  background-color: #1E60BF;
+}
+.card__color-entusiastas {
+  background-color: #989A2B;
+}
+
+@media all and (max-with: 501px) {
+  .card {
+    display: none;
+  }
+}
 .container {
   display: block;
   position: relative;
@@ -372,12 +492,15 @@ $SHADOWS
   transform: rotate(45deg);
 }
 
-.etiqueta, .etiqueta__entusiastas, .etiqueta__profesionales, .etiqueta__doctorado, .etiqueta__master, .etiqueta__grado {
+.etiqueta, .etiqueta__card--producto, .etiqueta__entusiastas, .etiqueta__profesionales, .etiqueta__doctorado, .etiqueta__master, .etiqueta__grado {
   padding: 3px 8px;
   text-align: center;
   color: #F4F3EF;
   letter-spacing: -0.23px;
   border-radius: 8px;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
 .etiqueta__grado {
   background-color: #5D4976;
@@ -394,77 +517,12 @@ $SHADOWS
 .etiqueta__entusiastas {
   background-color: #989A2B;
 }
-
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 4px;
-  overflow: hidden;
-  max-width: 550px;
-  height: auto;
-}
-.card__img {
-  min-width: 120px;
-  max-width: 140px;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-.card__details, .card__details-investigacion, .card__details-formacion {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.card__details-formacion {
-  font-size: 15px;
-  color: #F4F3EF;
-}
-.card__details-investigacion {
-  color: #383126;
-  background-color: #DFDAD3;
-  border: 1px solid #756A5B;
-}
-.card__details-investigacion p {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-}
-.card__details-investigacion h3 {
-  -webkit-margin-after: 0.09rem;
-          margin-block-end: 0.09rem;
-}
-.card__color-grado {
-  background-color: #5D4976;
-}
-.card__color-master {
-  background-color: #A7706C;
-}
-.card__color-doctorado {
-  background-color: #E19F40;
-}
-.card__color-cursos {
-  background-color: #1E60BF;
-}
-.card__color-entusiastas {
-  background-color: #989A2B;
+.etiqueta__card--producto {
+  color: #008A00;
+  border: 2px solid #008A00;
+  background-color: #ffffff;
 }
 
-@media all and (max-with: 501px) {
-  .card {
-    display: none;
-  }
-}
 nav {
   background: #ffffff;
   padding: 0 15px;
@@ -702,6 +760,69 @@ a {
   display: none;
 }
 
+.noticia {
+  padding-bottom: 30px;
+}
+.noticia__bloque {
+  gap: 30px;
+}
+@media (min-width: 1024px) {
+  .noticia__bloque {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .noticia__principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.noticia__title {
+  margin-top: 0.7em;
+  font-size: 17px;
+}
+@media (min-width: 1024px) {
+  .noticia__title {
+    font-size: 24px;
+  }
+}
+.noticia__description {
+  margin-top: 0.5em;
+}
+@media (min-width: 48em) {
+  .noticia__content {
+    padding: 10px 0;
+  }
+}
+.noticia__fecha {
+  font-size: 18px;
+  display: none;
+}
+.noticia__tag {
+  display: inline;
+  color: #FFE6B0;
+}
+@media (min-width: 1024px) {
+  .noticia__tag {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+}
+.noticia__img {
+  border-radius: 20px;
+}
+.noticia__link {
+  font-size: 13;
+  padding-top: 1em;
+}
+
 .svg__icon, .svg__icon--left, .svg__icon--right {
   position: relative;
   top: 0.1rem;
@@ -768,6 +889,19 @@ input:checked + .slider::before {
   -webkit-transform: translatex(30px);
           transform: translatex(30px);
   background-color: #FCFCFC;
+}
+
+p, h4 {
+  margin-top: 0;
+  display: block;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }
 
 html {

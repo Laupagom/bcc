@@ -11,6 +11,11 @@
         object-fit: cover; 
         object-position: center;
     }
+    &__border {
+        border: 1px solid $c-monocromo-600;
+        max-width: 468px;
+        background-color: $c-monocromo-200;
+    }
     &__details {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -26,14 +31,21 @@
             @extend .card__details;
             color: $c-monocromo-800;
             background-color: $c-monocromo-200;
-            border: 1px solid $c-monocromo-600;
             p {
                 margin-block-start: 0;
             }
             h3 {
                 margin-block-end: 0.09rem;
+                font-size: 15px;
             }
             }
+        &-producto {
+            @extend .card__details-investigacion;
+            margin-block-start: 0.9rem;
+            h3 { padding: 0;}
+            display: inline-block;
+            padding-top: 0.7rem;
+        }
         
     }
     &__color-grado {

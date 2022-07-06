@@ -231,3 +231,15 @@ $SHADOWS
 $drop-shadow-large: 0px 0px 72px 0px #0000000a;
 $drop-shadow-medium: 0px 0px 32px 0px #0000000a;
 $drop-shadow-small: 0px 0px 16px 0px #0000000a;
+
+
+
+/*------------------------------------*\
+$BREAKPOINTS
+\*------------------------------------*/
+$breakpoints: (
+    'small'  : 48em,
+    'medium' : 700px,
+    'large'  : 1024px,
+    'extralarge'  : 1540px,
+) !default;

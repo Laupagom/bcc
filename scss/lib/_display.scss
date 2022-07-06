@@ -1,14 +1,14 @@
-// display {
-//     &__mobile { //.display__mobile mostrará el contenido exclusivamente en resolución "MÓVIL Y TABLET"
-//         display: block;
-//         @include respond-to(large) {
-//             display: none;
-//         }
-//     }
-//     &__desktop { //.display__desktop mostrará el contenido exclusivamente en resolucion "DESKTOP"
-//         display: none;
-//         @include respond-to(large) {
-//             display: block;
-//         }
-//     }
-// }
+.display {
+    &__mobile { //.display__mobile mostrará el contenido exclusivamente en resolución "MÓVIL Y TABLET"
+        display: block;
+        @include respond-to(large) {
+            display: none;
+        }
+    }
+    &__desktop { //.display__desktop mostrará el contenido exclusivamente en resolucion "DESKTOP"
+        display: none;
+        @include respond-to(large) {
+            display: block;
+        }
+    }
+}

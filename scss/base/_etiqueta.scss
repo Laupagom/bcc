@@ -4,6 +4,8 @@
     color: $c-monocromo-100;
     letter-spacing: -0.23px;
     border-radius: 8px;
+    appearance: button;
+        // Etiquetas formación
         &__grado {
             @extend .etiqueta;
             background-color: $c-formacion-grado;
@@ -23,5 +25,13 @@
         &__entusiastas {
             @extend .etiqueta;
             background-color: $c-formacion-entusiastas;
+        }
+
+        // Etiquetas card-producto
+        &__card--producto {
+            @extend .etiqueta;
+            color: $c-suceso-default;
+            border: 2px solid $c-suceso-default;
+            background-color: $c-white;
         }
 }

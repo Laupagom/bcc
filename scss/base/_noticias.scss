@@ -1,0 +1,51 @@
+.noticia {
+    padding-bottom: 30px;
+    
+    &__bloque {
+        gap: 30px;
+        @include respond-to(large) {
+            display: flex;
+        }
+    }
+    &__principal {
+        @include respond-to(large) {
+            display: flex;
+        }
+    }
+    &__title {
+        margin-top: 0.7em;
+        font-size: 17px;
+        @include respond-to(large) {
+            font-size: 24px;
+        }
+    }
+    &__description {
+        margin-top: 0.5em;
+    }
+    &__content {
+        @include respond-to(small) {
+            padding: 10px 0;
+        }
+    }
+    &__fecha {
+        font-size: 18px;
+        display: none;
+    }
+    &__tag {
+        display: inline;
+        color: $c-advertencia-bg;
+        @include respond-to(large) {
+            position: fixed;
+            display: flex;
+            margin-left: -8px;
+            margin-top: -8px;
+        }
+    }
+    &__img {
+        border-radius: 20px;
+    }
+    &__link {
+        font-size: 13;
+        padding-top: 1em;
+    }
+}

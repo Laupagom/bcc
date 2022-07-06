@@ -1,18 +1,20 @@
 //lib
-@import "lib/display";
 @import "lib/functions";
-@import "lib/mixins";
 @import "lib/settings";
+@import "lib/mixins";
+@import "lib/display";
+
 
 //base
 @import "base/buttons";
+@import "base/card-mobile";
 @import "base/chekbox";
 @import "base/etiqueta";
-@import "base/formacion-mobile";
 @import "base/forms";
 @import "base/images";
 @import "base/links";
 @import "base/menu";
+@import "base/noticias";
 @import "base/svg-icon";
 @import "base/switch";
 @import "base/typography";
