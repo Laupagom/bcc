@@ -1,6 +1,10 @@
 .noticia {
-    padding-bottom: 30px;
-    
+    padding-bottom: 20px;
+    border-bottom: 1px solid $c-monocromo-900;
+    margin-bottom: 20px;
+    @include respond-to(large) {
+        border-bottom: 0;
+    }
     &__bloque {
         gap: 30px;
         @include respond-to(large) {

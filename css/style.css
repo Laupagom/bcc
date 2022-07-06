@@ -761,7 +761,14 @@ a {
 }
 
 .noticia {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #26201B;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .noticia {
+    border-bottom: 0;
+  }
 }
 .noticia__bloque {
   gap: 30px;
