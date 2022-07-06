@@ -339,26 +339,49 @@ $BREAKPOINTS
   display: flex;
   border-radius: 4px;
   overflow: hidden;
-  max-width: 550px;
-  height: auto;
+}
+@media (min-width: 700px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 700px) {
+  .card__desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 29px;
+  }
 }
 .card__img {
-  min-width: 120px;
-  max-width: 140px;
+  max-width: 35%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
+@media (min-width: 700px) {
+  .card__img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
 .card__border {
   border: 1px solid #756A5B;
-  max-width: 468px;
   background-color: #DFDAD3;
 }
-.card__details, .card__details-investigacion, .card__details-producto, .card__details-formacion {
-  padding-left: 1rem;
-  padding-right: 1rem;
+@media (min-width: 700px) {
+  .card__border {
+    border: none;
+    background-color: #ffffff;
+  }
+}
+.card__details, .card__details-investigacion, .card__details-producto, .card__details-investigacion-title, .card__details-formacion {
+  padding: 0 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,22 +393,35 @@ $BREAKPOINTS
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 700px) {
+  .card__details, .card__details-investigacion, .card__details-producto, .card__details-investigacion-title, .card__details-formacion {
+    padding: 0;
+  }
+}
 .card__details-formacion {
   font-size: 15px;
   color: #F4F3EF;
 }
-.card__details-investigacion, .card__details-producto {
+.card__details-investigacion, .card__details-producto, .card__details-investigacion-title {
   color: #383126;
   background-color: #DFDAD3;
 }
-.card__details-investigacion p, .card__details-producto p {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+@media (min-width: 700px) {
+  .card__details-investigacion, .card__details-producto, .card__details-investigacion-title {
+    background-color: #ffffff;
+  }
 }
-.card__details-investigacion h3, .card__details-producto h3 {
+.card__details-investigacion p, .card__details-producto p, .card__details-investigacion-title p {
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+}
+.card__details-investigacion-title h3 {
   -webkit-margin-after: 0.09rem;
           margin-block-end: 0.09rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
   font-size: 15px;
+  text-transform: uppercase;
 }
 .card__details-producto {
   -webkit-margin-before: 0.9rem;
@@ -412,11 +448,6 @@ $BREAKPOINTS
   background-color: #989A2B;
 }
 
-@media all and (max-with: 501px) {
-  .card {
-    display: none;
-  }
-}
 .container {
   display: block;
   position: relative;
